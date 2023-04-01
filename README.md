@@ -11,3 +11,4 @@ Pearl programs from [LSTS](https://github.com/andrew-johnson-4/LSTS) [L1](https:
 ### Macros
 
 - [If Expression](https://github.com/andrew-johnson-4/L1Pearls/blob/main/if_expression.tlc)
+- [JSON.stringify](https://github.com/andrew-johnson-4/L1Pearls/blob/main/json_stringify.tlc)
