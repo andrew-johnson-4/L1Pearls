@@ -1,0 +1,4 @@
+let $"if"(c: Boolean, t: R, f: R): R = match c {
+   True => t,
+   False => f,
+};
