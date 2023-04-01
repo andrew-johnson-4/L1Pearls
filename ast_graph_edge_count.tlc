@@ -1,5 +1,10 @@
-let edge_count = sum(
+let ast_edge_count = sum(
    for $s in $
    for $e in $s
    yield $e.length
 );
+
+//$ is the set of all symbols defined in the current namespace
+//each $s is a top-level AST node
+//each $e is a local-level AST node
+//$e.length is the number of outgoing references to other AST nodes
