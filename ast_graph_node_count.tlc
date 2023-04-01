@@ -1,0 +1,9 @@
+let ast_node_count() = sum(
+   for $s in $
+   for $e in $s
+   yield 1
+);
+
+//$ is the set of all symbols defined in the current namespace
+//each $s is a top-level AST node
+//each $e is a local-level AST node
