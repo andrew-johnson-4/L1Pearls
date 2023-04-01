@@ -1,4 +1,4 @@
-# L1Pearls
+# L1 Pearls
 Pearl programs from [LSTS](https://github.com/andrew-johnson-4/LSTS) L1
 
 ### Metaprogramming
