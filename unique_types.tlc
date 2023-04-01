@@ -1,0 +1,10 @@
+let unique_type_count() = count(
+   for $s in $
+   for $e in $s
+   yield $$e
+);
+
+//$ is the set of all symbols defined in the current namespace
+//each $s is a top-level AST node
+//each $e is a local-level AST node
+//$$e is the type of $e
