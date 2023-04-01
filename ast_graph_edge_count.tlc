@@ -1,4 +1,4 @@
-let ast_edge_count = sum(
+let ast_edge_count() = sum(
    for $s in $
    for $e in $s
    yield $e.length
