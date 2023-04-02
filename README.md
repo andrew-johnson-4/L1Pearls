@@ -7,6 +7,7 @@ Pearl programs from [LSTS](https://github.com/andrew-johnson-4/LSTS) [L1](https:
 - [Count edges in AST Graph](https://github.com/andrew-johnson-4/L1Pearls/blob/main/ast_graph_edge_count.tlc)
 - [Count unique types in AST Graph](https://github.com/andrew-johnson-4/L1Pearls/blob/main/unique_types.tlc)
 - [Count unique kinds in AST Graph](https://github.com/andrew-johnson-4/L1Pearls/blob/main/unique_kinds.tlc)
+- [Specialize a variable by an objective function](https://github.com/andrew-johnson-4/L1Pearls/blob/main/objective_function.tlc)
 
 ### Macros
 
