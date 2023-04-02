@@ -1,0 +1,3 @@
+let best_f = $min(f, Perplexity);
+
+//The $min meta-function selects the best candidate that minimizes the "Perplexity" score
