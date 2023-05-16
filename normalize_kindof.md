@@ -14,5 +14,5 @@ Basically this compartmentalization permits a more haphazard approach to develop
 Creating sound type systems is still desireable, but now there are decidability guiderails during the development of new stuff.
 
 There are many ways to approach rank level decidability, but it is at most only memorization.
-The simplest decidability check will simply return Undecided, and never provide any information.
+The simplest decidability check will return Undecided, and never provide any information.
 Anything more than that is wrote memorization of rule-dependent logic from the kinding system.
