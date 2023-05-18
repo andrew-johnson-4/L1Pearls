@@ -1,8 +1,0 @@
-let c = $(a) $$$ $(b);
-
-//$(a) is the namespace of a
-//$(b) is the namespace of b
-//$$$ merges two namespaces
-//namespaces can have multiple terms bound to the same symbol
-//namespaces are also order-insensitive
-//therefore merging namespaces preserves all information from both sides
