@@ -1,6 +1,0 @@
-macro $"if"(c: Boolean, t: R, f: R): R = match c {
-   True => t,
-   False => f,
-};
-
-//the "if" expression needs to be a macro so that it won't evaluate both branches under call-by-value evaluation
