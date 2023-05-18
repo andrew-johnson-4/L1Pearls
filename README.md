@@ -9,7 +9,3 @@ Pearl programs from [LSTS](https://github.com/andrew-johnson-4/LSTS) [L1](https:
 - [Count unique kinds in AST Graph](https://github.com/andrew-johnson-4/L1Pearls/blob/main/unique_kinds.tlc)
 - [Specialize a variable by an objective function](https://github.com/andrew-johnson-4/L1Pearls/blob/main/objective_function.tlc)
 - [Kinding Algorithm](https://github.com/andrew-johnson-4/L1Pearls/blob/main/normalize_kindof.md)
-
-### Macros
-
-- [If Expression](https://github.com/andrew-johnson-4/L1Pearls/blob/main/if_expression.tlc)
