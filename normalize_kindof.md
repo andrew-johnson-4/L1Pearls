@@ -15,4 +15,4 @@ Creating sound type systems is still desireable, but now there are decidability 
 
 There are many ways to approach rank level decidability, but it is at most only memorization.
 The simplest decidability check will return Undecided, and never provide any information.
-Anything more than that is wrote memorization of rule-dependent logic from the kinding system.
+Anything more than that is rote memorization of rule-dependent logic from the kinding system.
