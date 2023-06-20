@@ -10,8 +10,8 @@ let kind_of(x: Integer): KindOf = {
 
    ldr x         //input rule and arguments:       "normalize x"
    mov $(x) $$x  //destructure rule and arguments: "propagate the information in the namespace of x into the type of x"
-   label $$$?    //apply rule and arguments:       "apply previous rule and store here"
-   jmp $$$!      //output rule and arguments:      "ask whether previous rule diverges"
+   label $$$?    //apply rule and arguments:       "apply previously normalized rule and store here"
+   jmp $$$!      //output rule and arguments:      "ask whether previously normalized rule diverges"
 }
 ```
 
