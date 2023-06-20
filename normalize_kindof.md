@@ -15,6 +15,7 @@ let kind_of(x: Integer): KindOf = {
 
    //The instruction set for this abstract computer cannot determine the decidability of all decidability problems
    //The instruction set for this abstract computer can implement all strongly normalizing computable functions
+   //The abstract computer itself is not strongly normalizing (strange input gives strange output)
 }
 ```
 
