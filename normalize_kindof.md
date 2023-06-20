@@ -28,3 +28,20 @@ Creating sound type systems is still desireable, but now there are decidability 
 There are many ways to approach rank level decidability, but it is at most only memorization.
 The simplest decidability check will return Undecided, and never provide any information.
 Anything more than that is rote memorization of rule-dependent logic from the kinding system.
+
+## Instruction Set
+
+```lsts
+type Instr = Integer
+           | Instr !
+           | Instr ?
+           | Instr $$$ Instr
+           | label Instr
+           | jmp Instr
+           | $$$!
+           | $$$?
+           | $$Integer
+           | $(Integer)
+           | mov Instr Instr
+           | ldr Instr
+```
