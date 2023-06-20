@@ -51,7 +51,7 @@ TODO: prove soundness and completeness of (something) here with traditional meth
 
 ## Kinding Instruction Set (CISC)
 
-This instruction set is quite confusing to use directly. Therefore we have additional aliases for common combinations of instructions.
+The RISC instruction set is quite confusing to use directly. Therefore we have additional aliases for common combinations of instructions.
 
 ```lsts
 ... TBD ...
