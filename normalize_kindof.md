@@ -51,7 +51,7 @@ The RISC instruction set is quite confusing to use directly. Therefore we have a
 
 ## Rank-Level Normalization
 
-The rank-level normalization algorithm can be thought of as a constant time total function: Integer -> Integer.
+The rank-level normalization algorithm can be thought of as a constant-time total function: `Integer -> Integer`.
 
 This rank level normalization is the most fundamental basis of the "flexible soundness" guarantees in LSTS.
 Basically this compartmentalization permits a more haphazard approach to development and deployment of new type systems.
