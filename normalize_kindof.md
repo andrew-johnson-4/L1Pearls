@@ -1,5 +1,5 @@
 ```lsts
-type KindOf = Diverges | Converges(Integer) | Undecided(Integer,Integer,Integer); 
+type KindOf = Diverges | Converges(Integer) | Undecided(Integer); 
 
 let kind_of(x: Integer): KindOf = {
    //The kind system runs in a constant space abstract computer
