@@ -47,11 +47,11 @@ type Instr = Integer
            | ldr Instr
 ```
 
-This instruction set is quite confusing to use directly. Therefore we have additional aliases for common combinations of instructions.
-
 TODO: prove soundness and completeness of (something) here with traditional methods.
 
 ## Kinding Instruction Set (CISC)
+
+This instruction set is quite confusing to use directly. Therefore we have additional aliases for common combinations of instructions.
 
 ```lsts
 ... TBD ...
