@@ -30,7 +30,7 @@ There are many ways to approach rank level decidability, but it is at most only 
 The simplest decidability check will return Undecided, and never provide any information.
 Anything more than that is rote memorization of rule-dependent logic from the kinding system.
 
-## Kinding Instruction Set
+## Kinding Instruction Set (RISC)
 
 ```lsts
 type Instr = Integer
@@ -45,4 +45,12 @@ type Instr = Integer
            | $(Integer)
            | mov Instr Instr
            | ldr Instr
+```
+
+This instruction set is quite confusing to use directly. Therefore we have additional aliases for common combinations of instructions.
+
+## Kinding Instruction Set (CISC)
+
+```lsts
+... TBD ...
 ```
