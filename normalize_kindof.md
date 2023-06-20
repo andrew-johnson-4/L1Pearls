@@ -7,6 +7,7 @@ let kind_of(x: Integer): KindOf = {
    //The abstract computer is designed to traverse the AST to get whatever it needs
    //The goal of running a program in the kind system is to gain information at the type level
    //Kind rules are defined in the AST (the kind system is extensible)
+
    ldr x         //input rule and arguments
    mov $(x) $$x  //destructure rule and arguments
    label $$$?    //apply rule and arguments
