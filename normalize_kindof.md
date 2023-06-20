@@ -1,13 +1,20 @@
 ```lsts
 type KindOf = Diverges | Converges(Integer) | Undecided(Integer,Integer,Integer); 
 
-let kind_of(rule: Integer, l: Integer, r: Integer): KindOf = {
-   //The kind evaluation rules go here
+let kind_of(x: Integer): KindOf = {
+   //The kind system runs in a constant space abstract computer
+   //Programs here are constant space, but not constant time
+   //The abstract computer is designed to traverse the AST to get whatever it needs
+   //The goal of running a program in the kind system is to gain information at the type level
+   //Kind rules are defined in the AST (the kind system is extensible)
+   ldr x         //input rule and arguments
+   mov $(x) $$x  //destructure rule and arguments
+   label $$$?    //apply rule and arguments
+   jmp $$$!      //output rule and arguments
 }
 ```
 
-The rank level normalization algorithm is OK.
-The kind level normalization algorithm is TBD.
+The rank level normalization algorithm is OK. The kind level normalization algorithm is OK.
 
 This rank level normalization is the basis of the "flexible soundness" guarantees in LSTS.
 Basically this compartmentalization permits a more haphazard approach to development and deployment of new type systems.
