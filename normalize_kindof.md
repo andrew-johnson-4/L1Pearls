@@ -1,26 +1,26 @@
 ## Kinding Algorithm
 
+The kind system runs in a constant space abstract computer.
+Programs here are constant space, but not constant time.
+The abstract computer is designed to traverse the AST to get whatever it needs.
+The goal of running a program in the kind system is to gain information at the type level.
+Kind rules are defined in the AST (the kind system is extensible).
+
 ```lsts
 type KindOf = Diverges(Integer) | Converges(Integer) | Undecided(Integer); 
 
 let kind_of(x: Integer): KindOf = {
-   //The kind system runs in a constant space abstract computer
-   //Programs here are constant space, but not constant time
-   //The abstract computer is designed to traverse the AST to get whatever it needs
-   //The goal of running a program in the kind system is to gain information at the type level
-   //Kind rules are defined in the AST (the kind system is extensible)
-
    ldr x         //input rule and arguments:       "normalize x"
    mov $(x) $$x  //destructure rule and arguments: "propagate the information in the namespace of x into the type of x"
    label $$$?    //apply rule and arguments:       "apply previously normalized rule and store here"
    jmp $$$!      //output rule and arguments:      "ask whether previously normalized rule diverges"
-
-   //The instruction set for this abstract computer cannot determine the decidability of all decidability problems
-   //The instruction set for this abstract computer can implement all strongly normalizing computable functions
-   //The abstract computer itself is not strongly normalizing (when jmp is included)
-   //Without "jmp", all programs will be strongly normalizing
 }
 ```
+
+The instruction set for this abstract computer cannot determine the decidability of all decidability problems.
+The instruction set for this abstract computer can implement all strongly normalizing computable functions.
+The abstract computer itself is not strongly normalizing (when `jmp` is included).
+Without `jmp`, all programs will be strongly normalizing.
 
 ## Kinding Instruction Set (RISC)
 
