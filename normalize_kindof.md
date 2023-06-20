@@ -7,7 +7,7 @@ The goal of running a program in the kind system is to gain information at the t
 Kind rules are defined in the AST (the kind system is extensible).
 
 ```lsts
-type KindOf = Diverges(Integer) | Converges(Integer) | Undecided(Integer); 
+type KindOf = Diverges(Integer) | Converges(Integer) | Undecided(Integer)
 
 let kind_of(x: Integer): KindOf = {
    ldr x         //input rule and arguments:       "normalize x"
