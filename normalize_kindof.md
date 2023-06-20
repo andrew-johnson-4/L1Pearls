@@ -15,6 +15,13 @@ let kind_of(x: Integer): KindOf = {
    label $$$?    //apply rule and arguments:       "apply previously normalized rule and store here"
    jmp $$$!      //output rule and arguments:      "ask whether previously normalized rule diverges"
 }
+
+//strongly normalizing version, without decidability check
+let kind_of_quiet(x: Integer) = {
+   ldr x
+   mov $(x) $$x
+   label $$$?
+}
 ```
 
 The instruction set for this abstract computer *cannot* determine the decidability of all decidability problems.
