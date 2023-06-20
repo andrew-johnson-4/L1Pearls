@@ -17,8 +17,8 @@ let kind_of(x: Integer): KindOf = {
 }
 ```
 
-The instruction set for this abstract computer cannot determine the decidability of all decidability problems.
-The instruction set for this abstract computer can implement all strongly normalizing computable functions.
+The instruction set for this abstract computer *cannot* determine the decidability of all decidability problems.
+The instruction set *can* implement all strongly normalizing computable functions.
 The abstract computer itself is not strongly normalizing (when `jmp` is included).
 Without `jmp`, all programs will be strongly normalizing.
 
