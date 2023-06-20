@@ -39,7 +39,9 @@ type Instr = Integer
            | ldr Instr
 ```
 
-TODO: prove soundness and completeness of (something) here with traditional methods.
+TODO:
+1) write reference implementation of evaluation of each instruction
+2) prove soundness and completeness of each instruction wrt what they are intended to accomplish
 
 ## Kinding Instruction Set (CISC)
 
