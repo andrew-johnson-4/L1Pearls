@@ -8,8 +8,8 @@ let kind_of(x: Integer): KindOf = {
    //The goal of running a program in the kind system is to gain information at the type level
    //Kind rules are defined in the AST (the kind system is extensible)
 
-   ldr x         //input rule and arguments
-   mov $(x) $$x  //destructure rule and arguments
+   ldr x         //input rule and arguments:       "normalize x"
+   mov $(x) $$x  //destructure rule and arguments: "propagate the information in the namespace of x into the type of x"
    label $$$?    //apply rule and arguments
    jmp $$$!      //output rule and arguments
 }
