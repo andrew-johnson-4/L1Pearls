@@ -1,12 +1,13 @@
 ## Kinding Algorithm
 
 The kinding algorithm is designed to be expressive, yet strongly-normalizing and sound.
+The kind system is extensible, being defined from within the AST.
+Proper *kinds* are actually just types-for-types that determine what rules apply to which contexts.
 
 The kind system runs in a constant-space abstract computer.
 Programs here are constant-space, but not constant-time.
 The abstract computer is designed to traverse the AST to get whatever it needs.
 The goal of running a program in the kind system is to gain information at the type level.
-Kind rules are defined in the AST (the kind system is extensible).
 
 ```lsts
 type KindOf = Diverges(Integer) | Converges(Integer) | Undecided(Integer)
