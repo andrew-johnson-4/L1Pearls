@@ -40,8 +40,8 @@ type Instr = Integer
            | jmp Instr
            | $$$!
            | $$$?
-           | $$Integer
-           | $(Integer)
+           | $$Instr
+           | $(Instr)
            | mov Instr Instr
            | ldr Instr
 ```
