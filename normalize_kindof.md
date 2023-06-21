@@ -40,7 +40,7 @@ type Instr = Integer           //A λ-calculus term
            | jmp Instr         //eval-hard x: return β-normal form, may diverge
            | $$$!              //
            | $$$?              //
-           | $$Instr           //typeof x
+           | $$Instr           //ctx x
            | $(Instr)          //free x
            | mov Instr Instr   //infer x y: locally Hindley-Milner inference of term x in context y
            | ldr Instr         //eval-soft x: return β-normal form if known to not diverge (cached), otherwise return raw
