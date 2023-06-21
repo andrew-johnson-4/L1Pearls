@@ -36,10 +36,10 @@ type Instr = Integer           //A λ-calculus term
            | Instr !           //termsof x: return all terms bound in global context having the type x
            | Instr ?           //typesof x: return all types bound in global context having the term x
            | Instr $$$ Instr   //concat x y: return (x y)
-           | label Instr       //
+           | label Instr       //TODO: store information in global context
            | jmp Instr         //eval-hard x: return β-normal form, may diverge
-           | $$$!              //
-           | $$$?              //
+           | $$$!              //TODO: normalize global context terms
+           | $$$?              //TODO: normalize global context types
            | $$Instr           //ctx x: return all variables v in x, where v is not bound as a type in global context
            | $(Instr)          //free x: return all variables v in x, where v is not bound as a term in global context
            | mov Instr Instr   //infer x y: localized type inference of term x in context of y
