@@ -32,18 +32,18 @@ Without `jmp` all programs will be strongly normalizing.
 ## Kinding Instruction Set (RISC)
 
 ```lsts
-type Instr = Integer           //A λ-calculus term in beta normal form
-           | Instr !
-           | Instr ?
-           | Instr $$$ Instr
-           | label Instr
-           | jmp Instr
-           | $$$!
-           | $$$?
-           | $$Instr
-           | $(Instr)
-           | mov Instr Instr
-           | ldr Instr
+type Instr = Integer           //A λ-calculus term
+           | Instr !           //
+           | Instr ?           //
+           | Instr $$$ Instr   //
+           | label Instr       //
+           | jmp Instr         //Return β-normal form, may diverge
+           | $$$!              //
+           | $$$?              //
+           | $$Instr           //
+           | $(Instr)          //
+           | mov Instr Instr   //
+           | ldr Instr         //Return β-normal form if known to not diverge (cached), otherwise return raw
 ```
 
 TODO:
