@@ -35,15 +35,15 @@ Without `jmp` all programs will be strongly normalizing.
 type Instr = Integer           //A λ-calculus term
            | Instr !           //
            | Instr ?           //
-           | Instr $$$ Instr   //
+           | Instr $$$ Instr   //concat x y
            | label Instr       //
-           | jmp Instr         //Return β-normal form, may diverge
-           | $$$!              //Load previous value
-           | $$$?              //Load previous type
-           | $$Instr           //
-           | $(Instr)          //
-           | mov Instr Instr   //
-           | ldr Instr         //Return β-normal form if known to not diverge (cached), otherwise return raw
+           | jmp Instr         //eval-hard x: return β-normal form, may diverge
+           | $$$!              //
+           | $$$?              //
+           | $$Instr           //typeof x
+           | $(Instr)          //locals x
+           | mov Instr Instr   //infer x y: locally Hindley-Milner inference of term x in context y
+           | ldr Instr         //eval-soft x: return β-normal form if known to not diverge (cached), otherwise return raw
 ```
 
 TODO:
