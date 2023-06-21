@@ -59,7 +59,9 @@ TODO:
 The RISC instruction set is quite confusing to use directly. Therefore we have additional aliases for common combinations of instructions.
 
 ```lsts
-... TBD ...
+noop             //Assuming that the result is discarded, this operator does nothing other than consume processing time
+
+... more TBD ...
 ```
 
 ## Rank-Level Normalization
