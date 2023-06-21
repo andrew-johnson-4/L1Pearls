@@ -46,7 +46,7 @@ type Instr = Integer           //A λ-calculus term
            | $$$?              //TODO: normalize global context types
            | $$Instr           //ctx x: return all variables v in x, where v is not bound as a type in global context
            | $(Instr)          //free x: return all variables v in x, where v is not bound as a term in global context
-           | mov Instr Instr   //infer x y: localized type inference of term x in context of y
+           | mov Instr Instr   //infer x y: localized type inference of term x in context y
            | ldr Instr         //eval-soft x: return β-normal form if known to not diverge (cached), otherwise return raw
 ```
 
