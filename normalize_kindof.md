@@ -35,7 +35,7 @@ Without `jmp` all programs will be strongly normalizing.
 type Instr = Integer           //A λ-calculus term
            | Instr !           //termsof x: return all terms bound in global context having the type x
            | Instr ?           //typesof x: return all types bound in global context having the term x
-           | Instr $$$ Instr   //concat x y: return (x y)
+           | Instr $$$ Instr   //concat x y: return x y
            | label Instr       //TODO: store information in global context
            | jmp Instr         //eval-hard x: return β-normal form, may diverge
            | $$$!              //TODO: normalize global context terms
