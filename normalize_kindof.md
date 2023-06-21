@@ -41,7 +41,7 @@ type Instr = Integer           //A λ-calculus term
            | $$$!              //
            | $$$?              //
            | $$Instr           //typeof x
-           | $(Instr)          //locals x
+           | $(Instr)          //free x
            | mov Instr Instr   //infer x y: locally Hindley-Milner inference of term x in context y
            | ldr Instr         //eval-soft x: return β-normal form if known to not diverge (cached), otherwise return raw
 ```
