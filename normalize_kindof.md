@@ -33,16 +33,16 @@ Without `jmp` all programs will be strongly normalizing.
 
 ```lsts
 type Instr = Integer           //A λ-calculus term
-           | Instr !           //
-           | Instr ?           //
-           | Instr $$$ Instr   //concat x y
+           | Instr !           //termsof x: return all terms bound in global context having the type x
+           | Instr ?           //typesof x: return all types bound in global context having the term x
+           | Instr $$$ Instr   //concat x y: return (x y)
            | label Instr       //
            | jmp Instr         //eval-hard x: return β-normal form, may diverge
            | $$$!              //
            | $$$?              //
-           | $$Instr           //ctx x
-           | $(Instr)          //free x
-           | mov Instr Instr   //infer x y: locally Hindley-Milner inference of term x in context y
+           | $$Instr           //ctx x: return all variables v in x, where v is not bound as a type in global context
+           | $(Instr)          //free x: return all variables v in x, where v is not bound as a term in global context
+           | mov Instr Instr   //infer x y: localized type inference of term x in context of y
            | ldr Instr         //eval-soft x: return β-normal form if known to not diverge (cached), otherwise return raw
 ```
 
