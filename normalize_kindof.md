@@ -32,7 +32,7 @@ Without `jmp` all programs will be strongly normalizing.
 ## Kinding Instruction Set (RISC)
 
 ```lsts
-type Instr = Integer           //A Lambda-Calculus term in beta normal form
+type Instr = Integer           //A λ-calculus term in beta normal form
            | Instr !
            | Instr ?
            | Instr $$$ Instr
