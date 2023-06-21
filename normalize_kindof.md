@@ -38,8 +38,8 @@ type Instr = Integer           //A λ-calculus term
            | Instr $$$ Instr   //
            | label Instr       //
            | jmp Instr         //Return β-normal form, may diverge
-           | $$$!              //
-           | $$$?              //
+           | $$$!              //Load previous value
+           | $$$?              //Load previous type
            | $$Instr           //
            | $(Instr)          //
            | mov Instr Instr   //
