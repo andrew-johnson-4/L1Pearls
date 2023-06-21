@@ -1,5 +1,7 @@
 ## Kinding Algorithm
 
+The kinding algorithm is designed to be expressive, yet strongly-normalizing and sound.
+
 The kind system runs in a constant-space abstract computer.
 Programs here are constant-space, but not constant-time.
 The abstract computer is designed to traverse the AST to get whatever it needs.
