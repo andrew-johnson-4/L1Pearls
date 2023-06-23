@@ -52,7 +52,7 @@ type Instr = Integer           //A λ-calculus term
 
 TODO:
 1) write reference implementation of evaluation of each instruction
-2) prove soundness and completeness of each instruction wrt what they are intended to accomplish
+2) prove the total reduction of these rules into CoC (actual reduction might be infeasible)
 
 ## Kinding Instruction Set (CISC)
 
