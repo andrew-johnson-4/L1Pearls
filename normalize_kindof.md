@@ -63,16 +63,3 @@ noop             //Assuming that the result is discarded, this operator does not
 
 ... more TBD ...
 ```
-
-## Rank-Level Normalization
-
-The rank-level normalization algorithm can be thought of as a constant-time total function: `Integer -> Integer`.
-Rank-level normalization implements the reflective `jmp` instruction above.
-
-This rank-level normalization is the most fundamental basis of the "flexible soundness" guarantees in LSTS.
-Basically this compartmentalization permits a more haphazard approach to development and deployment of new type systems.
-Creating sound type systems is still desireable, but now there are decidability guiderails during the development of new stuff.
-
-There are many ways to approach rank-level decidability, but it is at most only memorization.
-The simplest decidability check will return `Undecided` and never provide any information.
-Anything more than that is rote memorization of rule-dependent logic from the kinding system.
